@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    box-sizing: inherit;
+}
+
+.body-content {
+    width: 100px;
+    margin: 0 auto;
+}
+
+header,main,section {
+    width: 900px;
+    margin: 0 auto;
+    border-top: 2px solid;
+}
+.header-img{
+    height: 500px;
+    background-image: url(./project-website-1000px.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    top: 200px;
+}
+.header-img img{
+    height: 200px;
+    width: 200px;
+    border-radius: 300px;
+}
+.project1,.project2 {
+    display: flow-root;
+    margin: 10px 0;
+}
+.project1 img {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+}
+.project2 img {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+}
+.work-item{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-auto-flow: row;
+}
+footer{
+    background-color: black;
+}
+footer p{
+    color: aliceblue;
+}
+footer li{
+    display: inline;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+footer img{
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+@media(min-width: 481px) and (max-width:1200px) {
+    * {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    box-sizing: inherit;
+}
+    
+}

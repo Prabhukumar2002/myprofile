@@ -1,0 +1,62 @@
+body{
+    background: url('bg-home-office-bookshelf.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head{
+    background-color: aliceblue;
+    width: 900px;
+    margin: 0 auto;
+}
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    box-sizing: inherit;
+}
+body footer{
+    
+    background-color: black;
+    margin-top: 900px;
+}
+footer p{
+    color: aliceblue;
+}
+li{
+    display: inline;
+}
+li img{
+    margin: 15px;
+    height: 30px;
+    width: 30px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+footer img{
+    width: 30px;
+    height: 30px;
+}
+@media(min-width: 481px) and (max-width:1200px) {
+    body {
+        margin: 0 auto;
+        background: url('bg-home-office-bookshelf.jpg') ;
+        background-size: cover;
+        /*background-repeat: no-repeat;*/
+    }
+    * {
+        box-sizing: border-box;
+    }
+    .head{
+
+        width: 500px;
+        margin: 0 auto;
+    }
+    html,
+    body {
+        box-sizing: inherit;
+    }
+}
