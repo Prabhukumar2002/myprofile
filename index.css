@@ -1,5 +1,5 @@
 body{
-    background: url('bg-home-office-bookshelf.jpg') ;
+    background: url('./bg-home-office-bookshelf.jpg') ;
     background-repeat: no-repeat;
     background-size: cover;
 }
