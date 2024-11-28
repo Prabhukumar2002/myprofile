@@ -1,13 +1,4 @@
-body{
-    background: url('bg-home-office-bookshelf.jpg') ;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.in-head{
-    background-color: aliceblue;
-    width: 900px;
-    margin: 0 auto;
-}
+/* General Styles */
 * {
     box-sizing: border-box;
 }
@@ -15,49 +6,112 @@ body{
 html,
 body {
     box-sizing: inherit;
+    line-height: 1.6;
 }
-footer{
-    width: 900px;
-    margin: 0 auto;
-    background-color: black;
-    margin-top: 900px;
-}
-footer p{
-    color: aliceblue;
-}
-li{
-    display: inline;
-}
-li img{
-    margin: 15px;
-    height: 30px;
-    width: 30px;
-}
-ul{
-    display: flex;
-    justify-content: space-around;
-}
-footer img{
-    width: 30px;
-    height: 30px;
-}
-@media(min-width: 481px) and (max-width:1200px) {
-    body {
-        margin: 0 auto;
-        background: url('bg-home-office-bookshelf.jpg') ;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    * {
-        box-sizing: border-box;
-    }
-    .head{
 
-        width: 500px;
-        margin: 0 auto;
-    }
-    html,
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url('bg-home-office-bookshelf.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.in-head {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+footer {
+    margin-top: 600px;
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li img {
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
     body {
-        box-sizing: inherit;
+        font-size: 14px;
+    }
+
+    .in-head {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .in-head {
+        padding: 20px;
+    }
+}
+
+/* Laptops and Desktops (769px and up) */
+@media (min-width: 769px) {
+    body {
+        font-size: 18px;
+    }
+
+    .in-head {
+        padding: 30px;
     }
 }
