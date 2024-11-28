@@ -1,9 +1,9 @@
 body{
-    background: url('./bg-home-office-bookshelf.jpg') ;
+    background: url('bg-home-office-bookshelf.jpg') ;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.head{
+.in-head{
     background-color: aliceblue;
     width: 900px;
     margin: 0 auto;
@@ -16,8 +16,9 @@ html,
 body {
     box-sizing: inherit;
 }
-body footer{
-    
+footer{
+    width: 900px;
+    margin: 0 auto;
     background-color: black;
     margin-top: 900px;
 }
@@ -45,7 +46,7 @@ footer img{
         margin: 0 auto;
         background: url('bg-home-office-bookshelf.jpg') ;
         background-size: cover;
-        /*background-repeat: no-repeat;*/
+        background-repeat: no-repeat;
     }
     * {
         box-sizing: border-box;
